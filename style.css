@@ -1,0 +1,22 @@
+/* .container {
+  max-width: ;
+} */
+.flex {
+  display: flex;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner {
+  gap: 20px;
+}
+.logo2 {
+  width: 60px;
+}
+.box1 {
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}

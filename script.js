@@ -1,13 +1,35 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     var owl = document.querySelector('.owl-carousel');
-//     if (owl) {
-//         var carousel = new Owl.Carousel(owl, {
+
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    lazyLoad: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 3,
+        },
+        1000: {
+            items: 3,
+        },
+    },
+});
+// $(".owl-carousel").owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+
+//     responsive: {
+//         0: {
 //             items: 1,
-//             loop: true,
-//             margin: 10,
-//             autoplay: true,
-//             autoplayTimeout: 3000,
-//             autoplayHoverPause: true
-//         });
-//     }
+//         },
+//         600: {
+//             items: 3,
+//         },
+//         1000: {
+//             items: 3,
+//         },
+//     },
 // });

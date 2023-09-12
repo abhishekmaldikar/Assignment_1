@@ -264,7 +264,7 @@ form.example::after {
   gap: 9px;
 }
 /* ---------------------------------------------------------------- */
-/* treatment-recovery */
+/* Treatment-recovery */
 /* ---------------------------------------------------------------- */
 .treatment-recovery {
   height: 340px;
@@ -274,10 +274,10 @@ form.example::after {
 }
 
 /*-----------------------------------------------------------------
-    -treatment-FAQ
+    -Treatment-FAQ
   ----------------------------------------------------------------- */
 .treatment-FAQ {
-  height: 340px;
+  height: px;
   /* justify-content: center; */
   align-items: center;
   gap: 50px;
@@ -290,31 +290,89 @@ form.example::after {
   gap: 8px;
 }
 /*-----------------------------------------------------------------
-    -carousel
+    -Carousel1
   ----------------------------------------------------------------- */
-
-/* .carousel-img {
+.Carousel1-main {
+  flex-direction: column;
+  gap: 10px;
+}
+.carausel1-card-header {
+  align-items: center;
+  gap: 22px;
+}
+.colon {
+  height: 50px;
+}
+.carausel1-card-image {
   margin-top: 15px;
   height: 100%;
   width: 100%;
 }
-.carousel-img img {
-  height: 100%;
-  width: 100%;
+.carausel1-card-image img {
+  height: 90%;
+  width: 90%;
 }
-.carousel-card {
+.carausel1-card {
+  flex-direction: column;
+  gap: 52px;
   width: 300px;
   border: 1px solid slategray;
   padding: 12px;
 }
-.patient {
+.carausel1-card-footer {
   align-items: center;
+  justify-content: left;
+}
+.footer-img {
+  height: 50px;
+}
+/*-----------------------------------------------------------------
+    -Top-Doctors Carousel -
+  ----------------------------------------------------------------- */
+.top-doctors-carousel {
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 60px;
+  height: 500px;
+  background-color: grey;
+  text-align: center;
+}
+.pink-box {
+  width: 200px;
+  height: 170px;
+  background-color: pink;
+}
+.rec-card-1 {
+  gap: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  flex-direction: column;
   justify-content: center;
-} */
+  align-items: center;
+  width: 230px;
+  height: 280px;
+  border: 1px solid black;
+}
+/*-----------------------------------------------------------------
+    -Top-Doctors Carousel -
+  ----------------------------------------------------------------- */
+.recommed-hospital {
+  padding: 50px;
+  height: 500px;
+  text-align: center;
+}
+.hosp-card {
+  flex-direction: column;
+  text-align: center;
+  width: 280px;
+  height: 330px;
+  border: 1px solid black;
+}
 
-/* Contact */
-
-.contact-us{
+/*-----------------------------------------------------------------
+    -Contact
+  ----------------------------------------------------------------- */
+.contact-us {
   padding-top: 30px;
   padding-bottom: 30px;
   flex-direction: column;
@@ -325,17 +383,18 @@ form.example::after {
   gap: 20px;
 }
 
-.contact-btn{
+.contact-btn {
   height: 40px;
   width: 100px;
   background-color: #0474f4;
   color: white;
   border: none;
 }
+/*-----------------------------------------------------------------
+    -Footer
+  ----------------------------------------------------------------- */
 
-/* footer1 */
-
-.footer1{
+.footer1 {
   padding: 30px;
   justify-content: center;
   gap: 60px;
@@ -343,38 +402,37 @@ form.example::after {
   color: white;
 }
 
-.footer1-sub{
+.footer1-sub {
   flex-direction: column;
   gap: 10px;
 }
 
 /* footer2 */
 
-.footer2{
+.footer2 {
   padding: 20px 0px 20px 20px;
-  
+
   gap: 50px;
   background-color: #102434;
   color: white;
 }
-.logo-footer2{
+.logo-footer2 {
   width: 300px;
 }
-.footer2-sub{
+.footer2-sub {
   flex-direction: column;
   gap: 10px;
   width: 500px;
 }
-.follow-us{
+.follow-us {
   flex-direction: column;
   gap: 10px;
-
 }
 
 /* footer3 */
 
-.footer3{
+.footer3 {
   gap: 20px;
-  background-color:  #04a4f4;
+  background-color: #04a4f4;
   color: white;
 }

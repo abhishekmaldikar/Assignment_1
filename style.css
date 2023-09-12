@@ -121,7 +121,7 @@
     -carousel
   ----------------------------------------------------------------- */
 
-.carousel-img {
+/* .carousel-img {
   margin-top: 15px;
   height: 100%;
   width: 100%;
@@ -129,8 +129,6 @@
 .carousel-img img {
   height: 100%;
   width: 100%;
-  /* object-fit: cover; */
-  /* border-radius: 50%; */
 }
 .carousel-card {
   width: 300px;
@@ -139,9 +137,5 @@
 }
 .patient {
   align-items: center;
-  /* justify-content: center; */
-}
-.swiper {
-  width: 600px;
-  height: 300px;
-}
+  justify-content: center;
+} */

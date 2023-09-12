@@ -311,3 +311,70 @@ form.example::after {
   align-items: center;
   justify-content: center;
 } */
+
+/* Contact */
+
+.contact-us{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #04a4f4;
+  color: white;
+  gap: 20px;
+}
+
+.contact-btn{
+  height: 40px;
+  width: 100px;
+  background-color: #0474f4;
+  color: white;
+  border: none;
+}
+
+/* footer1 */
+
+.footer1{
+  padding: 30px;
+  justify-content: center;
+  gap: 60px;
+  background-color: #102434;
+  color: white;
+}
+
+.footer1-sub{
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* footer2 */
+
+.footer2{
+  padding: 20px 0px 20px 20px;
+  
+  gap: 50px;
+  background-color: #102434;
+  color: white;
+}
+.logo-footer2{
+  width: 300px;
+}
+.footer2-sub{
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+}
+.follow-us{
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+/* footer3 */
+
+.footer3{
+  gap: 20px;
+  background-color:  #04a4f4;
+  color: white;
+}

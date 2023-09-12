@@ -3,18 +3,30 @@
 } */
 
 /* ---------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
 
 /* utility classes */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 .flex {
   display: flex;
 }
 .hr {
   background-color: grey;
+}
+.hr-dotted {
+  border-top: 2px dotted #04a4f4;
+  height: 3px;
+  width: 100%;
+}
+.hr-dotted-B {
+  border-top: 2px dotted #04a4f4;
+  height: 3px;
+  width: 50%;
 }
 .container {
   max-width: 1100px;
@@ -34,6 +46,9 @@
 .logo2 {
   width: 60px;
 }
+.banner-icons {
+  font-size: 25px;
+}
 .box {
   /* justify-content: center; */
   align-items: center;
@@ -49,15 +64,30 @@
 /* Navbar */
 /* ---------------------------------------------------------------- */
 .navbar {
+  color: white;
   background-color: #04a4f4;
-  padding: 18px;
+  /* padding: 18px; */
+  align-items: center;
   gap: 40px;
+  height: 50px;
 }
 .left-part {
+  align-items: center;
+  padding: 18px;
   gap: 40px;
 }
 .links {
   cursor: pointer;
+}
+.right-part {
+  color: white;
+}
+.right-part input {
+  border: none;
+  width: 120%;
+  height: 100%;
+
+  background-color: #187cf4;
 }
 /* ---------------------------------------------------------------- */
 /* hero-Section */
@@ -73,28 +103,45 @@
 /* treatment-overview */
 /* ---------------------------------------------------------------- */
 .treatment-overview {
-  /* justify-content: center; */
+  height: 340px;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 50px;
+  gap: 150px;
 }
 .text-part {
   flex-direction: column;
   gap: 20px;
   width: 500px;
 }
-.hr-dotted {
-  border-top: 2px dotted #04a4f4;
-  height: 3px;
-  width: 100%;
-}
+
 /* ---------------------------------------------------------------- */
 /* eligibility-prepartion */
 /* ---------------------------------------------------------------- */
+.main-container {
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.eligibility-for-treatment {
+  height: 340px;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  /* gap: 150px; */
+}
+.preparation-for-treatment {
+  height: 340px;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  /* gap: 150px; */
+}
 /* ---------------------------------------------------------------- */
 /* about-prepartion */
 /* ---------------------------------------------------------------- */
+
 .about-treatment {
   /* justify-content: center; */
+
+  height: 340px;
   align-items: center;
   gap: 50px;
 }
@@ -102,6 +149,7 @@
 /* post-treatment-care-treatment */
 /* ---------------------------------------------------------------- */
 .post-treatment-care-treatment {
+  height: 340px;
   /* justify-content: center; */
   align-items: center;
   gap: 50px;
@@ -110,6 +158,7 @@
 /* treatment-recovery */
 /* ---------------------------------------------------------------- */
 .treatment-recovery {
+  height: 340px;
   /* justify-content: center; */
   align-items: center;
   gap: 50px;

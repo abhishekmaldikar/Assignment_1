@@ -60,6 +60,48 @@
   width: 60px;
   height: 30px;
 }
+/* responsive */
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center-align text */
+  }
+  .box {
+    margin-top: 20px; /* Add spacing between boxes */
+  }
+  .logo1 {
+    width: 150px; /* Adjust logo size */
+  }
+  .logo2 {
+    display: none; /* Hide the second logo */
+  }
+  .flag {
+    display: none; /* Hide the flag and caret */
+  }
+}
+
+/* For screens larger than 768px */
+@media screen and (min-width: 769px) {
+  .banner {
+    justify-content: space-around; /* Restore the original arrangement */
+    text-align: left; /* Align text to the left */
+  }
+  .box {
+    margin-top: 0; /* Reset margin for boxes */
+  }
+
+  .logo1 {
+    width: 200px; /* Restore the original logo size */
+  }
+  .logo2 {
+    display: block; /* Show the second logo */
+  }
+  .flag {
+    display: flex; /* Show the flag and caret */
+  }
+}
+
 /* ---------------------------------------------------------------- */
 /* Navbar */
 /* ---------------------------------------------------------------- */
@@ -79,6 +121,7 @@
 .links {
   cursor: pointer;
 }
+
 .right-part {
   color: white;
 }
@@ -124,11 +167,50 @@
   color: #04a4f4;
   background-color: #ffffff;
 }
+/* responsive */
+/* Common Styles */
+
+/* Hero Section */
+/* .hero-section {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+} */
+
+/* Responsive Styles */
+/* @media screen and (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero {
+    width: 50%;
+  }
+
+  .knee-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .hero-info {
+    text-align: left;
+  }
+
+  .enquiry {
+    width: auto;
+  }
+} */
+
 /* ---------------------------------------------------------------- */
 /* Main-Navbar */
 /* ---------------------------------------------------------------- */
 .main-navbar {
-  padding: 18px;
+  padding: 60px;
+  height: 50px;
   gap: 40px;
   align-items: center;
 }
@@ -169,8 +251,9 @@ form.example::after {
 /* treatment-overview */
 /* ---------------------------------------------------------------- */
 .treatment-overview {
-  height: 340px;
-  justify-content: space-evenly;
+  padding: 30px 0px;
+  /* height: 340px; */
+  /* justify-content: space-evenly; */
   align-items: center;
   gap: 150px;
 }
@@ -179,29 +262,86 @@ form.example::after {
   gap: 20px;
   width: 500px;
 }
+/* responsive */
+/* Common Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Treatment Overview Section */
+.treatment-overview {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.text-part {
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.text-part h3 {
+  font-size: 24px;
+}
+
+.text-part p {
+  font-size: 16px;
+}
+
+.img-part {
+  margin-top: 20px;
+}
+
+.img-part img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  .treatment-overview {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-part {
+    text-align: left;
+    width: 50%;
+  }
+
+  .img-part {
+    width: 50%;
+  }
+}
 
 /* ---------------------------------------------------------------- */
 /* eligibility-prepartion */
 /* ---------------------------------------------------------------- */
 .main-container {
-  height: 900px;
   flex-direction: column;
-  /* gap: 40px; */
+
   justify-content: space-around;
   align-items: center;
-  /* justify-content: center; */
 }
 .eligibility-for-treatment {
-  height: 340px;
-  /* justify-content: space-evenly; */
+  padding: 30px 0px;
+
   align-items: center;
-  /* gap: 150px; */
 }
 .preparation-for-treatment {
-  height: 340px;
-  /* justify-content: space-evenly; */
+  padding: 30px 0px;
+
   align-items: center;
-  /* gap: 150px; */
 }
 .need-help-card {
   flex-direction: column;
@@ -240,22 +380,131 @@ form.example::after {
   border: 0.5px solid #04a4f4;
   background-color: #ffffff;
 }
+/* responsive */
+/* Common Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Main Container */
+.main-box {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Main Container for Desktop */
+@media screen and (min-width: 768px) {
+  .main-box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Eligibility and Preparation Sections */
+.eligibility-for-treatment,
+.preparation-for-treatment {
+  padding: 20px;
+  align-items: center;
+}
+
+/* Need Help Card */
+.need-help-card {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  border: 0.5px solid black;
+  padding: 20px;
+  box-shadow: 0 0 3px 1px grey;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  .eligibility-for-treatment,
+  .preparation-for-treatment {
+    padding: 30px 0;
+  }
+
+  /* Additional content for desktop */
+  .post-treatment-icon {
+    align-items: flex-start;
+  }
+}
+
+/* Form Input Styles */
+.form-input,
+.desc-input {
+  padding: 5px;
+  width: 100%;
+}
+
+/* Button Styles */
+.need-help-card-btn {
+  height: 40px;
+  width: 100%;
+  background-color: #04a4f4;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+.need-help-card-btn:hover {
+  color: #04a4f4;
+  border: 0.5px solid #04a4f4;
+  background-color: #ffffff;
+}
+
 /* ---------------------------------------------------------------- */
 /* about-prepartion */
 /* ---------------------------------------------------------------- */
 
 .about-treatment {
   /* justify-content: center; */
+  padding: 30px 0px;
 
-  height: 340px;
   align-items: center;
   gap: 50px;
 }
+/* responsive */
+.about-treatment {
+  padding: 30px 0;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .about-treatment {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-part {
+    text-align: center;
+  }
+
+  .post-treatment-icon {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* ---------------------------------------------------------------- */
 /* post-treatment-care-treatment */
 /* ---------------------------------------------------------------- */
 .post-treatment-care-treatment {
-  height: 340px;
+  padding: 30px 0px;
   /* justify-content: center; */
   align-items: center;
   gap: 50px;
@@ -267,7 +516,7 @@ form.example::after {
 /* Treatment-recovery */
 /* ---------------------------------------------------------------- */
 .treatment-recovery {
-  height: 340px;
+  padding: 30px 0px;
   /* justify-content: center; */
   align-items: center;
   gap: 50px;
@@ -277,7 +526,7 @@ form.example::after {
     -Treatment-FAQ
   ----------------------------------------------------------------- */
 .treatment-FAQ {
-  height: px;
+  padding: 50px 0px;
   /* justify-content: center; */
   align-items: center;
   gap: 50px;
@@ -289,6 +538,35 @@ form.example::after {
 .treatment-icon {
   gap: 8px;
 }
+/* responsive  */
+.treatment-FAQ {
+  padding: 50px 0;
+  align-items: center;
+  gap: 50px;
+}
+
+.treatment-text {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.treatment-icon {
+  gap: 8px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .treatment-text {
+    text-align: center;
+  }
+
+  .treatment-icon {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /*-----------------------------------------------------------------
     -Carousel1
   ----------------------------------------------------------------- */
@@ -302,6 +580,7 @@ form.example::after {
 }
 .colon {
   height: 50px;
+  width: 70px;
 }
 .carausel1-card-image {
   margin-top: 15px;
@@ -319,6 +598,13 @@ form.example::after {
   border: 1px solid slategray;
   padding: 12px;
 }
+.carausel2-card {
+  flex-direction: column;
+  gap: 52px;
+  width: 300px;
+  border: 1px solid slategray;
+  padding: 20px 12px;
+}
 .carausel1-card-footer {
   align-items: center;
   justify-content: left;
@@ -333,8 +619,8 @@ form.example::after {
   flex-direction: column;
   gap: 40px;
   padding: 30px 60px;
-  height: 500px;
-  background-color: grey;
+
+  background-color: #f0f4f4;
   text-align: center;
 }
 .pink-box {
@@ -353,12 +639,34 @@ form.example::after {
   height: 280px;
   border: 1px solid black;
 }
+.top-doctors-carousel-doctor {
+  font-style: italic;
+  color: #e90b0b;
+}
+.top-doctors-carousel-doctor-2 {
+  word-spacing: 3px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: rgba(45, 185, 220, 0.887);
+}
+.top-doctors-carousel-top {
+  word-spacing: 2px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.owl-carousel-doc {
+  font-weight: 700;
+  font-size: 13px;
+  color: gray;
+}
 /*-----------------------------------------------------------------
-    -Top-Doctors Carousel -
+    -Recommended hospital -
   ----------------------------------------------------------------- */
 .recommed-hospital {
-  padding: 50px;
-  height: 500px;
+  gap: 25px;
+  flex-direction: column;
+  padding: 30px;
+
   text-align: center;
 }
 .hosp-card {
@@ -367,6 +675,12 @@ form.example::after {
   width: 280px;
   height: 330px;
   border: 1px solid black;
+}
+.recommed-hospital-img {
+  word-spacing: 3px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: rgba(45, 185, 220, 0.887);
 }
 
 /*-----------------------------------------------------------------
@@ -393,12 +707,10 @@ form.example::after {
   cursor: pointer;
 }
 
-.contact-btn:hover{
-  background-color:white;
-  color:  #0474f4;
- 
+.contact-btn:hover {
+  background-color: white;
+  color: #0474f4;
 }
-
 
 /*-----------------------------------------------------------------
     -Footer
@@ -438,11 +750,88 @@ form.example::after {
   flex-direction: column;
   gap: 10px;
 }
-
+.nos {
+  color: rgb(0, 140, 255);
+}
+.icons-social {
+  gap: 20px;
+}
 /* footer3 */
 
 .footer3 {
   gap: 20px;
   background-color: #04a4f4;
   color: white;
+}
+/* responsive */
+/* Contact Section */
+.contact-us {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-btn {
+  height: 40px;
+  width: 100px;
+}
+
+/* Footer Styles */
+.footer1,
+.footer2,
+.footer3 {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer1 {
+  padding: 15px 20px;
+}
+
+.footer1-sub,
+.footer2-sub,
+.follow-us {
+  width: 100%;
+}
+
+.logo-footer2 {
+  max-width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  /* Contact Section */
+  /* .contact-us {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-btn {
+    width: auto;
+  } */
+
+  /* Footer Styles */
+  .footer1,
+  .footer2,
+  .footer3 {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer1-sub,
+  .footer2-sub,
+  .follow-us {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+  }
+
+  .logo-footer2 {
+    width: auto;
+  }
 }

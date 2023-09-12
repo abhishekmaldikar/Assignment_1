@@ -389,7 +389,17 @@ form.example::after {
   background-color: #0474f4;
   color: white;
   border: none;
+  border-radius: 2px;
+  cursor: pointer;
 }
+
+.contact-btn:hover{
+  background-color:white;
+  color:  #0474f4;
+ 
+}
+
+
 /*-----------------------------------------------------------------
     -Footer
   ----------------------------------------------------------------- */
